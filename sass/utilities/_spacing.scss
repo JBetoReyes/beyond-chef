@@ -2,49 +2,174 @@
 
 @each $size-name, $size-value in $sizes {
   .margin {
+    $parent: &;
     &-#{$size-name} {
       margin: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-#{$size-name} {
+        @include mq($breakpoint-name) {
+          margin: $size-value;
+        }
+      }
+    }
+
     &-block-start-#{$size-name} {
       margin-block-start: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-block-start-#{$size-name} {
+        @include mq($breakpoint-name) {
+          margin-block-start: $size-value;
+        }
+      }
+    }
+  
     &-block-end-#{$size-name} {
       margin-block-end: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+        &-#{$breakpoint-name}-block-end-#{$size-name} {
+          @include mq($breakpoint-name) {
+            margin-block-end: $size-value;
+          }
+        }
+    }
+
     &-block-#{$size-name} {
       margin-block: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-block-#{$size-name} {
+        @include mq($breakpoint-name) {
+          margin-block: $size-value;
+        }
+      }
+    }
+
     &-inline-start-#{$size-name} {
       margin-inline-start: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-inline-start-#{$size-name} {
+        @include mq($breakpoint-name) {
+          margin-inline-start: $size-value;
+        }
+      }
+    }
+
     &-inline-end-#{$size-name} {
       margin-inline-end: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-inline-end-#{$size-name} {
+        @include mq($breakpoint-name) {
+          margin-inline-end: $size-value;
+        }
+      }
+    }
+
     &-inline-#{$size-name} {
       margin-inline: $size-value;
+    }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-inline-#{$size-name} {
+        @include mq($breakpoint-name) {
+          margin-inline: $size-value;
+        }
+      }
     }
   }
   .padding {
     &-#{$size-name} {
       padding: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-#{$size-name} {
+        @include mq($breakpoint-name) {
+          padding: $size-value;
+        }
+      }
+    }
+
     &-block-start-#{$size-name} {
       padding-block-start: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-block-start-#{$size-name} {
+        @include mq($breakpoint-name) {
+          padding-block-start: $size-value;
+        }
+      }
+    }
+
     &-block-end-#{$size-name} {
       padding-block-end: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-block-end-#{$size-name} {
+        @include mq($breakpoint-name) {
+          padding-block-end: $size-value;
+        }
+      }
+    }
+
     &-block-#{$size-name} {
       padding-block: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-block-#{$size-name} {
+        @include mq($breakpoint-name) {
+          padding-block: $size-value;
+        }
+      }
+    }
+
     &-inline-start-#{$size-name} {
       padding-inline-start: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-inline-start-#{$size-name} {
+        @include mq($breakpoint-name) {
+          padding-inline-start: $size-value;
+        }
+      }
+    }
+
     &-inline-end-#{$size-name} {
       padding-inline-end: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-inline-end-#{$size-name} {
+        @include mq($breakpoint-name) {
+          padding-inline-end: $size-value;
+        }
+      }
+    }
+
     &-inline-#{$size-name} {
       padding-inline: $size-value;
+    }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+      &-#{$breakpoint-name}-inline-#{$size-name} {
+        @include mq($breakpoint-name) {
+          padding-inline: $size-value;
+        }
+      }
     }
   }
 }

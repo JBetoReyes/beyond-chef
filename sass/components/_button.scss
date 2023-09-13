@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+.button {
+    font-family: $ff-lato;
+    font-size: fs('200');
+    font-weight: $fw-700;
+    padding-block: 1em;
+    padding-inline: 2em;
+    background: clr(primary, '400');
+    border: none;
+    color: clr(neutral, '900');
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    @include mq('medium') {
+        font-size: fs('400'); // 18px
+    }
+
+    &[data-type="outline"]{
+        background-color: transparent;
+        color: clr(neutral, '100');
+        border: 3px solid clr(neutral, '100');
+    }
+
+    &:is(:hover, :focus) {
+        background: clr(neutral, "100");
+        color: clr(neutral, "900");
+    }
+}

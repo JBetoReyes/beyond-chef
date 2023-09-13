@@ -1,0 +1,5 @@
+@use "../abstracts/" as *;
+
+.logo {
+    @include square(4.5625rem);
+}

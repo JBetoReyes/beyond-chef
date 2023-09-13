@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+body {
+    font-family: $ff-lato;
+    font-weight: $fw-400;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+li {
+    font-family: $ff-abril;
+}
+
+.page-title {
+    font-size: fs("600");
+    font-weight: $fw-700;
+    text-align: center;
+    @include mq("medium") {
+        font-size: fs("800");
+    }
+}

@@ -4,11 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/main.scss">
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <main>
+      <section 
+        class="[ hero ] [ cluster ] [ clr-neutral-100 ]"
+        style="--cluster-gap: 1.625rem; --cluster-horizontal-alignment: center;"
+      >
+        <img class="[ logo ] [ margin-block-start-26 ]" src="/assets/logo.svg" alt="logo">
+        <ul 
+          class="[ navbar ] [ switcher ] [ fs-400 fs-medium-650 text-center ]"
+        >
+          <li class="navbar__item">About</li>
+          <li class="navbar__item">Meals</li>
+          <li class="navbar__item">Testimonials</li>
+        </ul>
+        <h1 class="[ page-title ] [ margin-medium-block-start-36 ]">
+          Homecooked meals <br> delivered straight to your door
+        </h1>
+        <div 
+          class=" [ hero__actions ] [ switcher ] [ margin-block-end-36 margin-medium-block-end-320 ]"
+        >
+          <button class="button">Place Order</button>
+          <button class="button" data-type="outline">More Info</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

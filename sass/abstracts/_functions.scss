@@ -1,4 +1,5 @@
 @use 'sass:map';
+@use 'typography' as *;
 @use 'colors' as *;
 
 @function clr($color, $shade) {

@@ -4,4 +4,12 @@
     .fs-#{$size-name} {
         font-size: $size-value;
     }
+
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+        @include mq($breakpoint-name) {
+            .fs-#{$breakpoint-name}-#{$size-name} {
+                font-size: $size-value;
+            }
+        }
+    }
 }

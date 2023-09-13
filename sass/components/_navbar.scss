@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.navbar {
+    @include mq('medium') {
+        --switcher-gap: 3rem;
+    }
+}
