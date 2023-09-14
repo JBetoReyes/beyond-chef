@@ -1,0 +1,43 @@
+@use "../abstracts/" as *;
+
+.about {
+    $parent: &;
+    &__intro {
+        justify-content: center;
+        --switcher-min-width: 60rem;
+        @include mq("large") {
+            --switcher-gap: 3.7rem;
+        }
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: end;
+        order: 1;
+        @include mq("large") {
+            order: 0;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: contain;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+        @include mq("large") {
+            transform: translateY(-30%);
+            max-width: 37.5rem;
+            order: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        @include mq("large") {
+            > * {
+                max-width: 37.5rem;
+            }
+        }
+    } 
+
+
+}

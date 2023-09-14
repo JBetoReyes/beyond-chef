@@ -13,7 +13,8 @@
   </head>
   <body>
     <main>
-      <section 
+      <section
+        id="hero"
         class="[ hero ] [ cluster ] [ clr-neutral-100 ]"
         style="--cluster-gap: 1.625rem; --cluster-horizontal-alignment: center;"
       >
@@ -21,19 +22,43 @@
         <ul 
           class="[ navbar ] [ switcher ] [ fs-400 fs-medium-650 text-center ]"
         >
-          <li class="navbar__item">About</li>
+          <li class="navbar__item"><a href="#about">About</a></li>
           <li class="navbar__item">Meals</li>
           <li class="navbar__item">Testimonials</li>
         </ul>
-        <h1 class="[ page-title ] [ margin-medium-block-start-36 ]">
+        <h1 class="[ page-title ] [ margin-medium-block-start-36 margin-large-block-start-160 ]">
           Homecooked meals <br> delivered straight to your door
         </h1>
         <div 
-          class=" [ hero__actions ] [ switcher ] [ margin-block-end-36 margin-medium-block-end-320 ]"
+          class=" [ hero__actions ] [ switcher ] [ margin-block-end-36 margin-large-block-end-320 ]"
         >
           <button class="button">Place Order</button>
           <button class="button" data-type="outline">More Info</button>
         </div>
+      </section>
+      <section id="about" class="about">
+        <section class="[ about__intro ] [ switcher ] [ margin-large-block-start-80 margin-large-block-end-60  ]">
+          <div class="about__image-container">
+            <img class="[ about__image ]" src="/assets/about.jpg" alt="about food" >
+          </div>
+          <div class="[ about__content ] [ margin-small-block-26 padding-small-inline-26 padding-medium-inline-80 padding-medium-block-60 ]">
+            <h2 class="[ about__tittle ] [ heading ]">
+              This is a nice big heading
+            </h2>
+            <h3 class="[ about__subtitle ] [ sub-heading margin-block-start-8 ]">
+              This is a subhead which mentions some interesting things
+            </h3>
+            <article class="[ article ] [ margin-block-start-26 ]">
+              <h4 class="[ article__title ]">This introduces the following text</h4>
+              <p class="[ about__text ] [ margin-block-start-8 ]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, iusto voluptatibus ex nemo iste placeat vitae aut, deleniti inventore quo, magnam magni qui delectus ullam enim animi quisquam reprehenderit perferendis!
+              </p>
+              <p class="[ about__text ] [ margin-block-start-16 ]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus voluptatum natus eum at quaerat nulla, iste illum voluptatem. Iure similique nobis alias vero totam minus? Corporis beatae eaque distinctio?
+              </p>
+            </article>
+          </div>
+        </section>
       </section>
     </main>
   </body>

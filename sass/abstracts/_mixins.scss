@@ -6,7 +6,7 @@
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {
     $breakpoint: map-get($breakpoints, $size);
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (min-width: nth($breakpoint, 1)) {
       @content;
     }
   } @else if meta.type-of($size) == number {
@@ -17,6 +17,23 @@
         @content;
       }
     }
+  } @else {
+    @error 'the keyword #{$size} is not in the $breakpoints map';
+  }
+}
+
+@mixin mq-between($size) {
+  @if map.has-key($breakpoints, $size) {
+    $breakpointList: map-get($breakpoints, $size);
+    @if ($size != "large") {
+      @media screen and (min-width: nth($breakpointList, 1)) and (max-width: nth($breakpointList, 2)) {
+        @content;
+      }
+    } @else {
+      @media screen and (min-width: nth($breakpointList, 1)) {
+        @content;
+      }
+    } 
   } @else {
     @error 'the keyword #{$size} is not in the $breakpoints map';
   }

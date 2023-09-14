@@ -9,7 +9,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           margin: $size-value;
         }
       }
@@ -21,7 +21,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-block-start-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           margin-block-start: $size-value;
         }
       }
@@ -33,7 +33,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
         &-#{$breakpoint-name}-block-end-#{$size-name} {
-          @include mq($breakpoint-name) {
+          @include mq-between($breakpoint-name) {
             margin-block-end: $size-value;
           }
         }
@@ -45,7 +45,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-block-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           margin-block: $size-value;
         }
       }
@@ -57,7 +57,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-inline-start-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           margin-inline-start: $size-value;
         }
       }
@@ -69,7 +69,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-inline-end-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           margin-inline-end: $size-value;
         }
       }
@@ -81,7 +81,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-inline-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           margin-inline: $size-value;
         }
       }
@@ -94,7 +94,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           padding: $size-value;
         }
       }
@@ -106,7 +106,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-block-start-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           padding-block-start: $size-value;
         }
       }
@@ -118,7 +118,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-block-end-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           padding-block-end: $size-value;
         }
       }
@@ -130,7 +130,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-block-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           padding-block: $size-value;
         }
       }
@@ -142,7 +142,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-inline-start-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           padding-inline-start: $size-value;
         }
       }
@@ -154,7 +154,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-inline-end-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           padding-inline-end: $size-value;
         }
       }
@@ -166,7 +166,7 @@
 
     @each $breakpoint-name, $breakpoint-value in $breakpoints {
       &-#{$breakpoint-name}-inline-#{$size-name} {
-        @include mq($breakpoint-name) {
+        @include mq-between($breakpoint-name) {
           padding-inline: $size-value;
         }
       }

@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.article {
+    &__title {
+        text-transform: uppercase;
+        font-weight: $fw-700;
+        @include mq("large") {
+            font-size: fs("500");
+        }
+    }
+}

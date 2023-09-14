@@ -3,6 +3,7 @@
 body {
     font-family: $ff-lato;
     font-weight: $fw-400;
+    font-size: fs("400");
 }
 
 li {
@@ -20,7 +21,28 @@ li {
     font-size: fs("600");
     font-weight: $fw-700;
     text-align: center;
-    @include mq("medium") {
+    @include mq("large") {
         font-size: fs("800");
+    }
+}
+
+.heading {
+    color: clr(primary, "500");
+    font-size: fs("600");
+    font-family: $ff-abril;
+
+    @include mq("large") {
+        font-size: fs("700");
+    }
+}
+
+.sub-heading {
+    font-size: fs("500");
+    color: clr(neutral, "400");
+    font-weight: $fw-400;
+    font-family: "Lato";
+    text-transform: uppercase;
+    @include mq("large") {
+        font-size: fs("600");
     }
 }
