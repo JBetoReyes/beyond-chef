@@ -1,3 +1,9 @@
+@use "../abstracts" as *;
+
 .text-center {
     text-align: center;
+}
+
+.underline {
+    @include pseudo-underline(10rem, .0625rem, clr(neutral, "400"), 2.25rem)
 }

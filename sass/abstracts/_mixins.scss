@@ -43,3 +43,15 @@
   width: $size;
   height: $size;
 }
+
+@mixin pseudo-underline($width, $height , $background-color, $margin) {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    margin: $margin auto;
+  }
+}
