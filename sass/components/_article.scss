@@ -8,4 +8,9 @@
             font-size: fs("500");
         }
     }
+
+    &__text {
+        color: clr(neutral, "400");
+        line-height: 1.8rem;
+    }
 }
