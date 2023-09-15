@@ -4,6 +4,7 @@
     background: url('/assets/meals-bg.jpg');
     text-align: center;
     --switcher-min-width: 40rem;
+    --switcher-gap: 1.5rem;
     &__subtitle {
         @include pseudo-underline(10rem, .0625rem, clr(neutral, "100"), 2.25rem);
         @include mq("large") {
@@ -11,13 +12,15 @@
             margin-inline: auto;
         }
     }
+
     &__list {
         @include mq("large") {
-            max-width: 101.5rem;
+            max-width: calc(101.5rem + calc(size(80) * 2));
             margin-inline: auto;
             padding-inline: size(80);
         }
     }
+
     &__image {
         object-fit: cover;
         width: 100%;

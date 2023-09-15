@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.testimonials {
+    text-align: center;
+    --switcher-min-width: 60rem;
+    --switcher-gap: 3rem;
+    &__list {
+        @include mq("large") {
+            max-width: calc(101.5rem + calc(size(80) * 2));
+            padding-inline: size(80);
+            margin-inline: auto;
+            --switcher-gap: 1.5rem;
+        }
+    }
+}
