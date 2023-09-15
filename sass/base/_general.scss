@@ -28,6 +28,7 @@ h2 {
     color: clr(primary, "500");
     font-size: fs("600");
     font-family: $ff-abril;
+    
 
     @include mq("large") {
         font-size: fs("700");
